@@ -116,7 +116,7 @@
                                         <input type="password" name="password" class="form-control" placeholder="Password">
                                 </div>
                                 </div>
-                                <a class="dropdown-item link-a" href="<?php echo base_url('Homeboard/regis') ?>">Belum Punya Akun? Daftar</a>
+                                <a class="dropdown-item link-a" href="<?php echo base_url('C_register') ?>">Belum Punya Akun? Daftar</a>
                                 <hr>
                                 <button type="submit" name="loginUser" class="btn btn-primary ">Masuk <i class="fas fa-angle-double-right"></i></button>
                                 <button type="reset" class="btn btn-danger ">Reset</button>

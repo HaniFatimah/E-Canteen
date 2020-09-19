@@ -10,6 +10,7 @@
                     <table id="example" class="table table-striped table-bordered" style="width: 100%">
                     <thead>
                         <tr>
+                            <th style="text-align: center;">No</th>
                             <th style="text-align: center;">Nama Menu</th>
                             <th style="text-align: center;">Harga Menu</th>
                             <th style="text-align: center;">Jumlah Beli</th>
@@ -19,8 +20,9 @@
                     </thead>
                     <tbody>
 
-                    <?php foreach($detail_beli as $datas) :?>
+                    <?php $no=1; foreach($detail_beli as $datas) :?>
                     <tr>
+                            <td style="text-align: center;"><?php echo $no++;?></td>
                             <td style="text-align: center;"><?php echo $datas->nama_product;?></td>
                             <td style="text-align: center;">Rp.<?php echo number_format($datas->harga_product);?></td>
                             <td style="text-align: center;"><?php echo $datas->jumlah_beli;?></td>

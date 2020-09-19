@@ -15,7 +15,7 @@
                             <th style="text-align: center;">Id Menu</th>
                             <th style="text-align: center;">Nama Menu</th>
                             <th style="text-align: center;">Harga Menu</th>
-                            <th style="text-align: center;">Stok</th>
+                             <th style="text-align: center;">Stok</th>
                             <th style="text-align: center;">Aksi</th>
                             
                         </tr>
@@ -27,7 +27,7 @@
                             <td style="text-align: center;"><?php echo $no++;?></td>
                             <td style="text-align: center;"><?php echo $datas->id_product;?></td>
                             <td style="text-align: center;"><?php echo $datas->nama_product;?></td>
-                            <td style="text-align: center;"><?php echo $datas->harga_product;?></td>
+                            <td style="text-align: center;">Rp.<?php echo number_format($datas->harga_product);?></td>
                             <td style="text-align: center;"><?php echo $datas->stok_product;?></td>
 
                             <td style="text-align: center;">
@@ -35,7 +35,7 @@
                                 <a href="<?php echo base_url().'C_produk/hapus_produk/'.$datas->id_product; ?>" class="btn btn-danger hapus" onclick="javascript: return confirm('Anda Yakin Hapus?');"><i class="fas fa-trash"></i> Hapus</a>
                             </td>
                         </tr>
-                    <?php $no++; endforeach; ?>
+                    <?php  endforeach; ?>
 
                     </tbody>
                 </table>

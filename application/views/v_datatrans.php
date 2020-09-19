@@ -29,7 +29,7 @@
                             <td style="text-align: center;">Rp.<?php echo number_format($datas->sub_total);?></td>
                             <td style="text-align: center;"><?php echo $datas->id_user;?></td>
                         </tr>
-                    <?php $no++; endforeach; ?>
+                    <?php ; endforeach; ?>
 
                     </tbody>
                 </table>

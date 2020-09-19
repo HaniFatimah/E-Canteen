@@ -17,7 +17,7 @@
 
         <tr>
         <th>Sub Total</th>
-        <td><?php echo $detail->sub_total?></td>
+        <td>Rp.<?php echo number_format($detail->sub_total)?></td>
         </tr>
     
         <tr>
@@ -27,6 +27,8 @@
 
         
     </table>
+    <a class="btn btn-primary" href="<?php echo base_url('C_transaksi/data_in') ?>">Kembali</a>
+
     </div>
     </div>
     </div>

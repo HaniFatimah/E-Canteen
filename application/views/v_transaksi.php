@@ -32,7 +32,7 @@
                                 <a href="<?php echo base_url().'C_transaksi/beliproduk/'.$datas->id_product; ?>" class="btn btn-success beliproduk"><i class="fas fa-buy"></i> Beli</a> 
                             </td>
                         </tr>
-                    <?php $no++; endforeach; ?>
+                    <?php  endforeach; ?>
 
                     </tbody>
                 </table>
