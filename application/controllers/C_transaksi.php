@@ -111,17 +111,20 @@
             $this->load->view('template/header');
             $data['transaksi'] = $this->M_produk->tampil_data('transaksi')->result();
             $this->load->view('v_datatrans',$data);
-            // if ($_POST) {
-            //     $field['nama_product']= $this->input->post('nama_product');
-            //     $field['harga_product']= $this->input->post('harga_product');
-            //     $field['stok_product']= $this->input->post('stok_product');
-   
-            //     $this->M_produk->tambah('product',$field);
-            //     redirect(base_url().'C_produk');
-            // }
             $this->load->view('template/footer');
             
         }
+
+        public function data_in(){
+            $this->load->view('template/sidebar');
+            $this->load->view('template/header');
+            $data['transaksi'] = $this->M_produk->tampil_data('transaksi')->result();
+            $this->load->view('v_invoice',$data);
+            $this->load->view('template/footer');
+            
+        }
+
+
 
         public function pdf_preview(){
             $data['transaksi'] = $this->M_produk->count_user();
@@ -145,6 +148,22 @@
             $pdf->Output('Data_Transaksi_'.date('d-m-Y').'.pdf','D');
         }
     
+
+        public function detail($id){
+            $this->load->model('M_produk');
+            $detail = $this->M_produk->detail_data($id);
+            $data['detail'] = $detail;
+            $this->load->view('template/sidebar');
+            $this->load->view('template/header');
+            $this->load->view('v_detail',$data);
+            $this->load->view('template/footer');
+        }
+
+        public function cetak_invoice($id_transaksi){
+            $data['data'] = $this->db->get_where('transaksi',['id_transaksi'=>$id_transaksi])->row();
+            $this->load->view('v_cetakin',$data);
+
+        }
 
 }
 ?>

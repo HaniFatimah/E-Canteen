@@ -3,7 +3,7 @@
     <div class="row">
 
         <div class="col-sm-12">
-        <h2>edit User</h2>
+        <h2>Edit User</h2>
 
             <div class="card">
                 <div class="card-body">
@@ -40,7 +40,7 @@
     </div>
     </div>
     </div>
-        
+    </div>  
         <!-- /.container-fluid -->
 
       <!-- End of Main Content -->

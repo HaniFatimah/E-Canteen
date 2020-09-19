@@ -48,26 +48,10 @@
           <span>Home</span></a>
       </li>
 
-      <!-- Divider -->
-  <!-- Divider -->
+      <!-- level 3 admin -->
+      <?php if($_SESSION['level']==1){?>
+            
       <hr class="sidebar-divider my-0">
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('C_Transaksi');?>">
-          <i class="fas fa-cash-register"></i>
-          <span>Transaksi</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('C_transaksi/keranjang');?>">
-          <i class="fas fa-cash-register"></i>
-          <span>Keranjang</span></a>
-      </li>
-
-
-      
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
         
         <hr class="sidebar-divider">
         <li class="nav-item">
@@ -76,7 +60,6 @@
             <span>Data User</span></a>
         </li>
 
-        <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
         <li class="nav-item">
@@ -85,7 +68,6 @@
             <span>Data Product</span></a>
         </li>
 
-         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
         <li class="nav-item">
@@ -94,11 +76,46 @@
             <span>Data Transaksi</span></a>
         </li>
 
+      <?php }?>
+      
+      <!-- level 2 kasir -->
+      <?php if($_SESSION['level']==2){?>
+          <hr class="sidebar-divider my-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('C_transaksi/data_in');?>">
+              <i class="fa fa-table""></i>
+              <span>Pembayaran</span></a>
+          </li>
+
+          <hr class="sidebar-divider my-0">
+
+          <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url('C_transaksi/data_transaksi');?>">
+              <i class="fa fa-table"></i>
+              <span>Data Transaksi</span></a>
+          </li>
+      <?php }?>
 
 
+      <!-- level 3 User -->
+      <?php if($_SESSION['level']==3){?>
+        <hr class="sidebar-divider my-0">
 
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url('C_Transaksi');?>">
+            <i class="fas fa-cash-register"></i>
+            <span>Beli Product</span></a>
+        </li>
 
-    
+        <hr class="sidebar-divider my-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url('C_transaksi/keranjang');?>">
+            <i class="fas fa-cash-register"></i>
+            <span>Keranjang</span></a>
+        </li>
+      <?php }?>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

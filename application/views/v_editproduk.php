@@ -10,18 +10,18 @@
                 <form method="post"> 
                                         
                     <div class="form-group ">
-                    <label >Nama Product </label>
+                    <label >Nama Menu </label>
                         <input type="text" name="nama_product" class="form-control" value="<?php echo $edit->nama_product;?>">
                     </div>
 
                     <div class="form-group ">
-                    <label >Harga Produk</label>
+                    <label >Harga Menu</label>
                         <input type="text" name="harga_product"  class="form-control" value="<?php echo $edit->harga_product;?>">
                     </div>
 
                  
                     <div class="form-group ">
-                    <label >Stok Produk</label>
+                    <label >Stok Menu</label>
                         <input type="text" name="stok_product"  class="form-control" value="<?php echo $edit->stok_product;?>">
                     </div>
 
@@ -37,7 +37,8 @@
     </div>
     </div>
     </div>
-        
+    </div>
+  
         <!-- /.container-fluid -->
 
       <!-- End of Main Content -->

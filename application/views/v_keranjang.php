@@ -10,8 +10,8 @@
                     <table id="example" class="table table-striped table-bordered" style="width: 100%">
                     <thead>
                         <tr>
-                            <th style="text-align: center;">Nama Product</th>
-                            <th style="text-align: center;">Harga Product</th>
+                            <th style="text-align: center;">Nama Menu</th>
+                            <th style="text-align: center;">Harga Menu</th>
                             <th style="text-align: center;">Jumlah Beli</th>
                             <th style="text-align: center;">Total</th>
                             <th style="text-align: center;">Aksi</th>                            

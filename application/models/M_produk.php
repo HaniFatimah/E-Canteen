@@ -50,5 +50,12 @@ class M_produk extends CI_Model {
         $data = $this->db->get('transaksi');
         return $data->num_rows();
     }
+
+    public function detail_data($id = NULL){
+        $query = $this->db->get_where('transaksi', array('id_transaksi'=>$id))->row();
+        return $query;
+
+    }
+
 }
 ?>

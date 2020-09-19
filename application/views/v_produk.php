@@ -2,7 +2,7 @@
     <div class="container-fluid">
     <div class="row" >
             <div class="col-sm-12 mt-3 ">
-            <h3>Data Produk</h3>
+            <h3>Data Menu</h3>
             <hr>
             <button class="btn btn-primary " data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Tambah Data</button>
                 <hr>
@@ -12,9 +12,9 @@
                     <thead>
                         <tr>
                             <th style="text-align: center;">No</th>
-                            <th style="text-align: center;">Id Product</th>
-                            <th style="text-align: center;">Nama Product</th>
-                            <th style="text-align: center;">Harga Product</th>
+                            <th style="text-align: center;">Id Menu</th>
+                            <th style="text-align: center;">Nama Menu</th>
+                            <th style="text-align: center;">Harga Menu</th>
                             <th style="text-align: center;">Stok</th>
                             <th style="text-align: center;">Aksi</th>
                             
